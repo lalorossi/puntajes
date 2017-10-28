@@ -13,8 +13,8 @@ function get_data($url) {
 // para escribir, se trata como una varianle normal
 
 
-$returned_content = get_data('http://www.planetagrandt.com.ar/2017/09/puntajes-gran-dt-viernes-29-09-fecha-5-primera-division-2017-2018.html');
+$returned_content = get_data('www.planetagrandt.com.ar/2017/09/puntajes-gran-dt-viernes-29-09-fecha-5-primera-division-2017-2018.html');
 
-/*echo $returned_content;*/
+echo $returned_content;
 
  ?>

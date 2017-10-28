@@ -7,13 +7,15 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
     <link rel="stylesheet" href="css/style.css">
  -->    
+
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<!-- 
+
+<!-- Este script usa curl.php para traer la pagina toda de una -->
 <script type="text/javascript">
     // handles the click event for link 1, sends the query
     function getOutput() {
       getRequest(
-          'curl.php', // URL for the PHP file
+          'curl.php',   // URL for the PHP file
            drawOutput,  // handle successful request
            drawError    // handle error
       );
@@ -22,7 +24,7 @@
     // handles drawing an error message
     function drawError() {
         var container = document.getElementById('output');
-        container.innerHTML = 'Bummer: there was an error!';
+        container.innerHTML = 'Shit: there was an error!';
     }
     // handles the response, adds the html
     function drawOutput(responseText) {
@@ -62,17 +64,17 @@
         return req;
     }
 </script> 
--->
 
 
 <!-- <script src="jquery-3.2.1.min.js"></script> -->
 
-<!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
 
-
+<!-- Este script usa JQuery para traer la página toda de una -->
+<!-- 
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type="text/javascript">
     $.support.cors = true;
-    var ExternalURL = "http://www.planetagrandt.com.ar/2017/09/puntajes-gran-dt-viernes-29-09-fecha-5-primera-division-2017-2018.html"; // This address must not contain any leading "http://"
+    var ExternalURL = "www.planetagrandt.com.ar/2017/09/puntajes-gran-dt-viernes-29-09-fecha-5-primera-division-2017-2018.html"; // This address must not contain any leading "http://"
     var ContentLocationInDOM = null; // If you're trying to get sub-content from the page, specify the "CSS style" jQuery syntax here, otherwise set this to "null"
     $(document).ready(loadContent);
     function loadContent()
@@ -95,7 +97,7 @@
       });
     }
 </script>
-
+ -->
 
 </head>
 <!-- <body style="background-color: #3f557a"> -->
